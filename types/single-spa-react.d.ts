@@ -36,6 +36,8 @@ export interface ReactAppOrParcel<ExtraProps> {
   update?: LifeCycleFn<ExtraProps>;
 }
 
+export const SingleSpaContext: React.Context<AppProps>;
+
 export default function singleSpaReact<ExtraProps = {}>(
   opts: SingleSpaReactOpts<ExtraProps & AppProps>
 ): ReactAppOrParcel<ExtraProps>;
